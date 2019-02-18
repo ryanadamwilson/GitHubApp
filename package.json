@@ -1,0 +1,65 @@
+{
+  "name": "ssr",
+  "version": "1.0.0",
+  "description": "Server-side rendering test app",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack -D --mode development"
+  },
+  "author": "Ryan Wilson",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.14.0",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "moment": "^2.24.0",
+    "path": "^0.12.7",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-test-renderer": "^16.8.2",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "require": "^2.4.20",
+    "save": "^2.3.3",
+    "source-map": "^0.7.3",
+    "yarn": "^1.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "css-loader": "^2.1.0",
+    "eslint-plugin-react": "^7.12.4",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/config/webpack/test.js"
+    ]
+  }
+}

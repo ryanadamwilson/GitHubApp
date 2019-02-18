@@ -1,0 +1,22 @@
+.repos {
+  width: 100%;
+  max-width: 350px;
+  background: $grey-6;
+  height: 100%;
+  .repo {
+    padding: 10px;
+    border-right: $skinny-border;
+    border-left: $skinny-border;
+    border-top: $skinny-border;
+    &:last-of-type {
+      border-bottom: $skinny-border;
+    }
+    &.repo--is_selected {
+      border-right: none;
+      background-color: $white;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
