@@ -33,6 +33,7 @@ export default class App extends React.Component {
     }
     return (
       <form id="GitHubApp" className="token" onSubmit={this.handleTokenSubmission}>
+        <div className="form-label">Please provide your GitHub API token: </div>
         <input type="text" name="token" onChange={this.handleChange} value={this.state.value} />
         <input type="submit" value="Submit" />
       </form>

@@ -8,4 +8,14 @@
 
 #GitHubApp {
   display: flex;
+  &.token {
+    padding: 30px;
+    display: block;
+  }
+}
+
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
 }
